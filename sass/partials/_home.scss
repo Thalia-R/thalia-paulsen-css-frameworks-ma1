@@ -1,0 +1,35 @@
+h1 {
+  font-family: "Julius Sans One", sans-serif;
+  color: getColour(heading-font-colour);
+  font-size: 1.8em;
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+.col-md {
+  border-radius: 15px;
+  background-color: getColour(content-background-colour);
+  margin: 0.5em;
+  min-height: 250px;
+  max-width: 300px;
+}
+
+.box-one,
+.box-two {
+  background-color: getColour(content-background-colour);
+}
+
+.box-three,
+.box-eight {
+  background-color: white;
+  border: 3px solid getColour(primary-colour);
+}
+
+.box-six {
+  background-color: getColour(primary-colour);
+  border: 3px solid white;
+}
+
+.row {
+  justify-content: center;
+}

@@ -1,0 +1,13 @@
+$colours: (
+  body-background-colour: #e5e5e5,
+  content-background-colour: #f4f3ee,
+  primary-colour: #c32c72,
+  nav-font-colour: #8d8d8d,
+  brand-font-colour: #262626,
+  heading-font-colour: #6a6a6a,
+  background-colour-white: #ffffff,
+);
+
+@function getColour($colour) {
+  @return map-get($colours, $colour);
+}

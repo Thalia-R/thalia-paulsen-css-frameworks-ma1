@@ -1,0 +1,56 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: getColour(body-background-colour);
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: getColour(background-colour-white);
+  color: getColour(nav-font-colour);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5em;
+}
+
+footer p {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin: 0;
+  font-size: 0.875em;
+}
+
+footer a {
+  text-decoration: none;
+  color: getColour(nav-font-colour);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer {
+    background-color: getColour(content-background-colour);
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

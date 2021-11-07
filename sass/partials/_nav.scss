@@ -1,0 +1,20 @@
+.bg-light {
+  background-color: getColour(content-background-colour) !important;
+  color: getColor(nav-font-colour);
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: getColour(primary-colour);
+}
+
+@media (max-width: 575.98px) {
+  ul {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    background-color: getColour(content-background-colour) !important;
+  }
+}
