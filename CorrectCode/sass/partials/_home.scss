@@ -1,0 +1,47 @@
+h1 {
+  font-family: "Julius Sans One", sans-serif;
+  color: getColour(heading-font-colour);
+  font-size: 1.8em;
+  margin-top: 4.5em;
+  margin-bottom: 2em;
+}
+.row {
+  justify-content: center;
+  margin: 0.5em;
+  flex-wrap: wrap;
+
+  .col-sm {
+    border-radius: 15px;
+    background-color: getColour(content-background-colour);
+    margin: 0.5em;
+    height: 260px;
+  }
+
+  .box-one,
+  .box-two {
+    background-color: getColour(content-background-colour);
+  }
+
+  .box-three,
+  .box-eight {
+    background-color: white;
+    border: 3px solid getColour(primary-colour);
+  }
+
+  .box-six {
+    background-color: getColour(primary-colour);
+    border: 3px solid white;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .col-sm {
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-sm {
+    width: 200px;
+  }
+}
